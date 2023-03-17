@@ -6,6 +6,12 @@ import java.util.List;
 
 public class MyUtils {
 
+	/**
+	 * Given a List<String[]> and a Header and a path, it will print a .csv file in the desired outpath
+	 * @param filePath String Where the output file need to be printed from the project directory
+	 * @param dataLines List<String[]> A list of String needed to be printed
+	 * @param header String A String that will be printed for 
+	 */
 	public static void writeCSV(String filePath, List<String[]> dataLines, String header) {
 		StringBuilder csvString = new StringBuilder();
 		csvString.append(header + "\n");

@@ -10,9 +10,7 @@ public class Train {
 	}
 	
 	public int getDelayAtDestination() {
-		
-		int delay = this.itinerary.delay.get(this.itinerary.delay.size()-1);
-		return delay;
+		return itinerary.delay.get(itinerary.delay.size()-1);
 	}
 
 }
